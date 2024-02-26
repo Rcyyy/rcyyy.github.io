@@ -1,5 +1,5 @@
 ---
-title: Unix Domain Socket 使用浅析
+title: Unix Domain Socket
 # author: aaa
 date: 2023-03-26 14:00:00 +0800
 categories: [Linux, IPC]
@@ -523,5 +523,5 @@ ___
    本文的探讨都集中在发送端，而且是UPD模式下。TCP模式下(`SOCK_STREAM`)的UDS不一定适用。在UDS场景下选用`UPD`还是`TCP`更多是使用方式的不同，因为本机通信不会存在**乱序**、**丢包**等网络问题的存在，之后有用到的话在研究吧。
 
 ## Update
-后续在使用的时候有的机器偶现NO BUFFER错误。后续已解决，见[这篇博客](../内存管理-kswapd进程分析)
+后续在使用的时候有的机器偶现NO BUFFER错误。后续已解决，见[这篇博客](../unix-domain-socket)
    
